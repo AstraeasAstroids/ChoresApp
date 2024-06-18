@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,11 @@ namespace ChoresApp
     public partial class Form1 : Form
     {
         public List<string> memberList = new List<string> ();
+        public List<string> buttons = new List<string>();
+
+        public object Button1 { get; private set; }
+        public object ChoresButtons { get; private set; }
+
         public Form1()
         {
             InitializeComponent();
@@ -97,7 +103,24 @@ namespace ChoresApp
 
             toolStripCombox_MemberList.Items.AddRange(memberList.ToArray());
         }
-        private void RichTextBox1_TextChanged(object sender, EventArgs e)
+
+        private object GetButton1()
+        {
+            return Button1;
+        }
+
+        private void Button1_Click(object sender, EventArgs e, object button1, GroupBox Button1)
+        {
+            ;  
+           
+           }
+          
+
+
+
+
+
+         void RichTextBox1_TextChanged(object sender, EventArgs e)
                   
         {
             //create an array to hold 9 strings. 

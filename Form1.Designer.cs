@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.MembersList = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox_Member9 = new System.Windows.Forms.TextBox();
@@ -70,7 +71,6 @@
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.trackBar3 = new System.Windows.Forms.TrackBar();
@@ -84,7 +84,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.dataSet1 = new System.Data.DataSet();
-            this.MembersList = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -93,7 +92,6 @@
             this.groupBox2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
@@ -133,6 +131,17 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Members";
             // 
+            // MembersList
+            // 
+            this.MembersList.BackColor = System.Drawing.Color.Orchid;
+            this.MembersList.Location = new System.Drawing.Point(338, 496);
+            this.MembersList.Name = "MembersList";
+            this.MembersList.Size = new System.Drawing.Size(154, 41);
+            this.MembersList.TabIndex = 12;
+            this.MembersList.Text = "Enter Names";
+            this.MembersList.UseVisualStyleBackColor = false;
+            this.MembersList.Click += new System.EventHandler(this.MembersList_Click);
+            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(236, 18);
@@ -154,7 +163,7 @@
             this.groupBox1.Controls.Add(this.textBox_Member3);
             this.groupBox1.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.groupBox1.Location = new System.Drawing.Point(132, 247);
+            this.groupBox1.Location = new System.Drawing.Point(144, 184);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(599, 279);
             this.groupBox1.TabIndex = 10;
@@ -244,11 +253,11 @@
             this.richTextBox1.BackColor = System.Drawing.Color.Plum;
             this.richTextBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.richTextBox1.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(180, 61);
+            this.richTextBox1.Location = new System.Drawing.Point(186, 74);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(510, 170);
+            this.richTextBox1.Size = new System.Drawing.Size(510, 78);
             this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "\tTeam Work Makes the Dream Work!\n\n\t    Whose on Board your team? ";
+            this.richTextBox1.Text = "\tTeam Work Makes the Dream Work!\n\t    Whose on Board your team? ";
             this.richTextBox1.TextChanged += new System.EventHandler(this.RichTextBox1_TextChanged);
             // 
             // tabPage2
@@ -498,7 +507,6 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.Silver;
-            this.tabPage3.Controls.Add(this.dataGridView1);
             this.tabPage3.Controls.Add(this.flowLayoutPanel1);
             this.tabPage3.Controls.Add(this.label3);
             this.tabPage3.Controls.Add(this.label2);
@@ -513,30 +521,19 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Rewards";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.DataSource = this.bindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(82, 178);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(755, 150);
-            this.dataGridView1.TabIndex = 7;
-            // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.trackBar3);
-            this.flowLayoutPanel1.Controls.Add(this.trackBar1);
             this.flowLayoutPanel1.Controls.Add(this.trackBar2);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(92, 345);
+            this.flowLayoutPanel1.Controls.Add(this.trackBar1);
+            this.flowLayoutPanel1.Controls.Add(this.trackBar3);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(92, 157);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(745, 171);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(745, 359);
             this.flowLayoutPanel1.TabIndex = 6;
             // 
             // trackBar3
             // 
-            this.trackBar3.Location = new System.Drawing.Point(3, 3);
+            this.trackBar3.Location = new System.Drawing.Point(3, 105);
             this.trackBar3.Name = "trackBar3";
             this.trackBar3.Size = new System.Drawing.Size(704, 45);
             this.trackBar3.TabIndex = 2;
@@ -550,7 +547,7 @@
             // 
             // trackBar2
             // 
-            this.trackBar2.Location = new System.Drawing.Point(3, 105);
+            this.trackBar2.Location = new System.Drawing.Point(3, 3);
             this.trackBar2.Name = "trackBar2";
             this.trackBar2.Size = new System.Drawing.Size(704, 45);
             this.trackBar2.TabIndex = 1;
@@ -611,17 +608,6 @@
             // 
             this.dataSet1.DataSetName = "NewDataSet";
             // 
-            // MembersList
-            // 
-            this.MembersList.BackColor = System.Drawing.Color.Orchid;
-            this.MembersList.Location = new System.Drawing.Point(341, 170);
-            this.MembersList.Name = "MembersList";
-            this.MembersList.Size = new System.Drawing.Size(154, 41);
-            this.MembersList.TabIndex = 12;
-            this.MembersList.Text = "Enter Names";
-            this.MembersList.UseVisualStyleBackColor = false;
-            this.MembersList.Click += new System.EventHandler(this.MembersList_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -643,7 +629,6 @@
             this.toolStrip1.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
@@ -710,7 +695,6 @@
         private System.Windows.Forms.ToolStripButton toolStripButton4;
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
         private System.Windows.Forms.BindingSource bindingSource1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox_Member9;
         private System.Windows.Forms.TextBox textBox_Member2;
         private System.Windows.Forms.TextBox textBox_Member1;
