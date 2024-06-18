@@ -28,6 +28,72 @@ namespace ChoresApp
             {
                 textBox_Member1.Visible = false;            
             }
+            if (textBox_Member2.Text != string.Empty)
+            {
+                memberList.Add(textBox_Member2.Text);
+            }
+            else
+            {
+                textBox_Member2.Visible = false;
+            }
+            if (textBox_Member3.Text != string.Empty)
+            {
+                memberList.Add(textBox_Member3.Text);
+            }
+            else
+            {
+                textBox_Member3.Visible = false;
+            }
+            if (textBox_Member4.Text != string.Empty)
+            {
+                memberList.Add(textBox_Member4.Text);
+            }
+            else
+            {
+                textBox_Member4.Visible = false;
+            }
+            if (textBox_Member5.Text != string.Empty)
+            {
+                memberList.Add(textBox_Member5.Text);
+            }
+            else
+            {
+                textBox_Member5.Visible = false;
+            }
+            if (textBox_Member6.Text != string.Empty)
+            {
+                memberList.Add(textBox_Member6.Text);
+            }
+            else 
+            {
+                textBox_Member6.Visible = false;      
+            }
+            if (textBox_Member7.Text != string.Empty)
+            {
+
+                memberList.Add(textBox_Member7.Text);
+            }
+            else
+            {
+                textBox_Member7.Visible = false;
+            }
+            if (textBox_Member8.Text != string.Empty)
+            {
+                memberList.Add(textBox_Member8.Text);
+            }
+            else
+            {
+                textBox_Member8.Visible = false;
+            }
+            if (textBox_Member9.Text != string.Empty)
+            {
+                memberList.Add(textBox_Member9.Text);
+            }
+            else
+            {
+                textBox_Member9.Visible = false;
+            }
+
 
             toolStripCombox_MemberList.Items.AddRange(memberList.ToArray());
         }
