@@ -185,5 +185,15 @@ namespace ChoresApp
         {
 
         }
+
+        private void progressBar2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progressBar3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

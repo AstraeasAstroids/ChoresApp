@@ -71,17 +71,25 @@
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.trackBar3 = new System.Windows.Forms.TrackBar();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.trackBar2 = new System.Windows.Forms.TrackBar();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.progressBar9 = new System.Windows.Forms.ProgressBar();
+            this.progressBar8 = new System.Windows.Forms.ProgressBar();
+            this.progressBar7 = new System.Windows.Forms.ProgressBar();
+            this.progressBar6 = new System.Windows.Forms.ProgressBar();
+            this.progressBar5 = new System.Windows.Forms.ProgressBar();
+            this.progressBar4 = new System.Windows.Forms.ProgressBar();
+            this.progressBar3 = new System.Windows.Forms.ProgressBar();
+            this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.Team = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.dataSet1 = new System.Data.DataSet();
             this.tabControl1.SuspendLayout();
@@ -92,14 +100,11 @@
             this.groupBox2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -507,7 +512,9 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.Silver;
-            this.tabPage3.Controls.Add(this.flowLayoutPanel1);
+            this.tabPage3.Controls.Add(this.label4);
+            this.tabPage3.Controls.Add(this.panel2);
+            this.tabPage3.Controls.Add(this.Team);
             this.tabPage3.Controls.Add(this.label3);
             this.tabPage3.Controls.Add(this.label2);
             this.tabPage3.Controls.Add(this.label1);
@@ -521,41 +528,110 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Rewards";
             // 
-            // flowLayoutPanel1
+            // label4
             // 
-            this.flowLayoutPanel1.Controls.Add(this.trackBar2);
-            this.flowLayoutPanel1.Controls.Add(this.trackBar1);
-            this.flowLayoutPanel1.Controls.Add(this.trackBar3);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(92, 157);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(745, 359);
-            this.flowLayoutPanel1.TabIndex = 6;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(399, 22);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(155, 21);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Seven day progress\r\n";
             // 
-            // trackBar3
+            // panel2
             // 
-            this.trackBar3.Location = new System.Drawing.Point(3, 105);
-            this.trackBar3.Name = "trackBar3";
-            this.trackBar3.Size = new System.Drawing.Size(704, 45);
-            this.trackBar3.TabIndex = 2;
+            this.panel2.Controls.Add(this.progressBar9);
+            this.panel2.Controls.Add(this.progressBar8);
+            this.panel2.Controls.Add(this.progressBar7);
+            this.panel2.Controls.Add(this.progressBar6);
+            this.panel2.Controls.Add(this.progressBar5);
+            this.panel2.Controls.Add(this.progressBar4);
+            this.panel2.Controls.Add(this.progressBar3);
+            this.panel2.Controls.Add(this.progressBar2);
+            this.panel2.Controls.Add(this.progressBar1);
+            this.panel2.Location = new System.Drawing.Point(197, 49);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(594, 397);
+            this.panel2.TabIndex = 7;
             // 
-            // trackBar1
+            // progressBar9
             // 
-            this.trackBar1.Location = new System.Drawing.Point(3, 54);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(704, 45);
-            this.trackBar1.TabIndex = 0;
+            this.progressBar9.Location = new System.Drawing.Point(21, 347);
+            this.progressBar9.Name = "progressBar9";
+            this.progressBar9.Size = new System.Drawing.Size(548, 37);
+            this.progressBar9.TabIndex = 8;
             // 
-            // trackBar2
+            // progressBar8
             // 
-            this.trackBar2.Location = new System.Drawing.Point(3, 3);
-            this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(704, 45);
-            this.trackBar2.TabIndex = 1;
+            this.progressBar8.Location = new System.Drawing.Point(21, 304);
+            this.progressBar8.Name = "progressBar8";
+            this.progressBar8.Size = new System.Drawing.Size(548, 37);
+            this.progressBar8.TabIndex = 7;
+            // 
+            // progressBar7
+            // 
+            this.progressBar7.Location = new System.Drawing.Point(21, 261);
+            this.progressBar7.Name = "progressBar7";
+            this.progressBar7.Size = new System.Drawing.Size(548, 37);
+            this.progressBar7.TabIndex = 6;
+            // 
+            // progressBar6
+            // 
+            this.progressBar6.Location = new System.Drawing.Point(21, 218);
+            this.progressBar6.Name = "progressBar6";
+            this.progressBar6.Size = new System.Drawing.Size(548, 37);
+            this.progressBar6.TabIndex = 5;
+            // 
+            // progressBar5
+            // 
+            this.progressBar5.Location = new System.Drawing.Point(21, 175);
+            this.progressBar5.Name = "progressBar5";
+            this.progressBar5.Size = new System.Drawing.Size(548, 37);
+            this.progressBar5.TabIndex = 4;
+            // 
+            // progressBar4
+            // 
+            this.progressBar4.Location = new System.Drawing.Point(21, 132);
+            this.progressBar4.Name = "progressBar4";
+            this.progressBar4.Size = new System.Drawing.Size(548, 37);
+            this.progressBar4.TabIndex = 3;
+            // 
+            // progressBar3
+            // 
+            this.progressBar3.Location = new System.Drawing.Point(21, 89);
+            this.progressBar3.Name = "progressBar3";
+            this.progressBar3.Size = new System.Drawing.Size(548, 37);
+            this.progressBar3.TabIndex = 2;
+            this.progressBar3.Click += new System.EventHandler(this.progressBar3_Click);
+            // 
+            // progressBar2
+            // 
+            this.progressBar2.Location = new System.Drawing.Point(21, 46);
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(548, 37);
+            this.progressBar2.TabIndex = 1;
+            this.progressBar2.Click += new System.EventHandler(this.progressBar2_Click);
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(21, 3);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(548, 37);
+            this.progressBar1.TabIndex = 0;
+            // 
+            // Team
+            // 
+            this.Team.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.Team.FormattingEnabled = true;
+            this.Team.ItemHeight = 21;
+            this.Team.Location = new System.Drawing.Point(790, 22);
+            this.Team.Name = "Team";
+            this.Team.Size = new System.Drawing.Size(227, 424);
+            this.Team.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(582, 112);
+            this.label3.Location = new System.Drawing.Point(90, 405);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(101, 42);
             this.label3.TabIndex = 5;
@@ -565,7 +641,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(355, 112);
+            this.label2.Location = new System.Drawing.Point(66, 267);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 42);
             this.label2.TabIndex = 4;
@@ -574,7 +650,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(130, 112);
+            this.label1.Location = new System.Drawing.Point(45, 112);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 42);
             this.label1.TabIndex = 3;
@@ -582,15 +658,15 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(545, 43);
+            this.pictureBox3.Location = new System.Drawing.Point(11, 336);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(156, 66);
+            this.pictureBox3.Size = new System.Drawing.Size(180, 66);
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(323, 43);
+            this.pictureBox2.Location = new System.Drawing.Point(23, 195);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(132, 66);
             this.pictureBox2.TabIndex = 1;
@@ -598,9 +674,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(109, 43);
+            this.pictureBox1.Location = new System.Drawing.Point(41, 43);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(126, 66);
+            this.pictureBox1.Size = new System.Drawing.Size(91, 66);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -629,15 +705,11 @@
             this.toolStrip1.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             this.ResumeLayout(false);
 
@@ -682,11 +754,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Data.DataSet dataSet1;
-        private System.Windows.Forms.TrackBar trackBar1;
-        private System.Windows.Forms.TrackBar trackBar3;
-        private System.Windows.Forms.TrackBar trackBar2;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripComboBox toolStripCombox_MemberList;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
@@ -699,6 +767,18 @@
         private System.Windows.Forms.TextBox textBox_Member2;
         private System.Windows.Forms.TextBox textBox_Member1;
         private System.Windows.Forms.Button MembersList;
+        private System.Windows.Forms.ListBox Team;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ProgressBar progressBar9;
+        private System.Windows.Forms.ProgressBar progressBar8;
+        private System.Windows.Forms.ProgressBar progressBar7;
+        private System.Windows.Forms.ProgressBar progressBar6;
+        private System.Windows.Forms.ProgressBar progressBar5;
+        private System.Windows.Forms.ProgressBar progressBar4;
+        private System.Windows.Forms.ProgressBar progressBar3;
+        private System.Windows.Forms.ProgressBar progressBar2;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label label4;
     }
 }
 
