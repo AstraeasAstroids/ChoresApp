@@ -92,6 +92,7 @@
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.dataSet1 = new System.Data.DataSet();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -139,11 +140,11 @@
             // MembersList
             // 
             this.MembersList.BackColor = System.Drawing.Color.Orchid;
-            this.MembersList.Location = new System.Drawing.Point(338, 496);
+            this.MembersList.Location = new System.Drawing.Point(328, 484);
             this.MembersList.Name = "MembersList";
-            this.MembersList.Size = new System.Drawing.Size(154, 41);
+            this.MembersList.Size = new System.Drawing.Size(222, 46);
             this.MembersList.TabIndex = 12;
-            this.MembersList.Text = "Enter Names";
+            this.MembersList.Text = "Enter Team Names";
             this.MembersList.UseVisualStyleBackColor = false;
             this.MembersList.Click += new System.EventHandler(this.MembersList_Click);
             // 
@@ -512,6 +513,7 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.Silver;
+            this.tabPage3.Controls.Add(this.richTextBox2);
             this.tabPage3.Controls.Add(this.label4);
             this.tabPage3.Controls.Add(this.panel2);
             this.tabPage3.Controls.Add(this.Team);
@@ -621,11 +623,12 @@
             // Team
             // 
             this.Team.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.Team.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Team.FormattingEnabled = true;
-            this.Team.ItemHeight = 21;
+            this.Team.ItemHeight = 17;
             this.Team.Location = new System.Drawing.Point(790, 22);
             this.Team.Name = "Team";
-            this.Team.Size = new System.Drawing.Size(227, 424);
+            this.Team.Size = new System.Drawing.Size(227, 412);
             this.Team.TabIndex = 6;
             // 
             // label3
@@ -683,6 +686,16 @@
             // dataSet1
             // 
             this.dataSet1.DataSetName = "NewDataSet";
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.richTextBox2.Location = new System.Drawing.Point(218, 452);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.richTextBox2.Size = new System.Drawing.Size(548, 29);
+            this.richTextBox2.TabIndex = 10;
+            this.richTextBox2.Text = " 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 10 - 11 - 12 - 13 - 14 - 15\n";
             // 
             // Form1
             // 
@@ -779,6 +792,7 @@
         private System.Windows.Forms.ProgressBar progressBar2;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.RichTextBox richTextBox2;
     }
 }
 
